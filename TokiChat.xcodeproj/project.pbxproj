@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5E3A72A21304D8A002CFABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3A72921304D8A002CFABA /* AppDelegate.swift */; };
+		A5E3A72C21304D8A002CFABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3A72B21304D8A002CFABA /* ViewController.swift */; };
+		A5E3A72F21304D8A002CFABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E3A72D21304D8A002CFABA /* Main.storyboard */; };
+		A5E3A73121304D8B002CFABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E3A73021304D8B002CFABA /* Assets.xcassets */; };
+		A5E3A73421304D8B002CFABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E3A73221304D8B002CFABA /* LaunchScreen.storyboard */; };
+		A5E3A73F21304D8B002CFABA /* TokiChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3A73E21304D8B002CFABA /* TokiChatTests.swift */; };
+		A5E3A74A21304D8B002CFABA /* TokiChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3A74921304D8B002CFABA /* TokiChatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5E3A73B21304D8B002CFABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E3A71E21304D8A002CFABA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E3A72521304D8A002CFABA;
+			remoteInfo = TokiChat;
+		};
+		A5E3A74621304D8B002CFABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E3A71E21304D8A002CFABA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E3A72521304D8A002CFABA;
+			remoteInfo = TokiChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5E3A72621304D8A002CFABA /* TokiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E3A72921304D8A002CFABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5E3A72B21304D8A002CFABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5E3A72E21304D8A002CFABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5E3A73021304D8B002CFABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5E3A73321304D8B002CFABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5E3A73521304D8B002CFABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E3A73A21304D8B002CFABA /* TokiChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokiChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E3A73E21304D8B002CFABA /* TokiChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokiChatTests.swift; sourceTree = "<group>"; };
+		A5E3A74021304D8B002CFABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E3A74521304D8B002CFABA /* TokiChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokiChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E3A74921304D8B002CFABA /* TokiChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokiChatUITests.swift; sourceTree = "<group>"; };
+		A5E3A74B21304D8B002CFABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5E3A72321304D8A002CFABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E3A73721304D8B002CFABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E3A74221304D8B002CFABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5E3A71D21304D8A002CFABA = {
+			isa = PBXGroup;
+			children = (
+				A5E3A72821304D8A002CFABA /* TokiChat */,
+				A5E3A73D21304D8B002CFABA /* TokiChatTests */,
+				A5E3A74821304D8B002CFABA /* TokiChatUITests */,
+				A5E3A72721304D8A002CFABA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5E3A72721304D8A002CFABA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3A72621304D8A002CFABA /* TokiChat.app */,
+				A5E3A73A21304D8B002CFABA /* TokiChatTests.xctest */,
+				A5E3A74521304D8B002CFABA /* TokiChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5E3A72821304D8A002CFABA /* TokiChat */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3A72921304D8A002CFABA /* AppDelegate.swift */,
+				A5E3A72B21304D8A002CFABA /* ViewController.swift */,
+				A5E3A72D21304D8A002CFABA /* Main.storyboard */,
+				A5E3A73021304D8B002CFABA /* Assets.xcassets */,
+				A5E3A73221304D8B002CFABA /* LaunchScreen.storyboard */,
+				A5E3A73521304D8B002CFABA /* Info.plist */,
+			);
+			path = TokiChat;
+			sourceTree = "<group>";
+		};
+		A5E3A73D21304D8B002CFABA /* TokiChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3A73E21304D8B002CFABA /* TokiChatTests.swift */,
+				A5E3A74021304D8B002CFABA /* Info.plist */,
+			);
+			path = TokiChatTests;
+			sourceTree = "<group>";
+		};
+		A5E3A74821304D8B002CFABA /* TokiChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3A74921304D8B002CFABA /* TokiChatUITests.swift */,
+				A5E3A74B21304D8B002CFABA /* Info.plist */,
+			);
+			path = TokiChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5E3A72521304D8A002CFABA /* TokiChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E3A74E21304D8B002CFABA /* Build configuration list for PBXNativeTarget "TokiChat" */;
+			buildPhases = (
+				A5E3A72221304D8A002CFABA /* Sources */,
+				A5E3A72321304D8A002CFABA /* Frameworks */,
+				A5E3A72421304D8A002CFABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokiChat;
+			productName = TokiChat;
+			productReference = A5E3A72621304D8A002CFABA /* TokiChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5E3A73921304D8B002CFABA /* TokiChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E3A75121304D8B002CFABA /* Build configuration list for PBXNativeTarget "TokiChatTests" */;
+			buildPhases = (
+				A5E3A73621304D8B002CFABA /* Sources */,
+				A5E3A73721304D8B002CFABA /* Frameworks */,
+				A5E3A73821304D8B002CFABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E3A73C21304D8B002CFABA /* PBXTargetDependency */,
+			);
+			name = TokiChatTests;
+			productName = TokiChatTests;
+			productReference = A5E3A73A21304D8B002CFABA /* TokiChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5E3A74421304D8B002CFABA /* TokiChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E3A75421304D8B002CFABA /* Build configuration list for PBXNativeTarget "TokiChatUITests" */;
+			buildPhases = (
+				A5E3A74121304D8B002CFABA /* Sources */,
+				A5E3A74221304D8B002CFABA /* Frameworks */,
+				A5E3A74321304D8B002CFABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E3A74721304D8B002CFABA /* PBXTargetDependency */,
+			);
+			name = TokiChatUITests;
+			productName = TokiChatUITests;
+			productReference = A5E3A74521304D8B002CFABA /* TokiChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5E3A71E21304D8A002CFABA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Metalic_archaea;
+				TargetAttributes = {
+					A5E3A72521304D8A002CFABA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					A5E3A73921304D8B002CFABA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A5E3A72521304D8A002CFABA;
+					};
+					A5E3A74421304D8B002CFABA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A5E3A72521304D8A002CFABA;
+					};
+				};
+			};
+			buildConfigurationList = A5E3A72121304D8A002CFABA /* Build configuration list for PBXProject "TokiChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5E3A71D21304D8A002CFABA;
+			productRefGroup = A5E3A72721304D8A002CFABA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5E3A72521304D8A002CFABA /* TokiChat */,
+				A5E3A73921304D8B002CFABA /* TokiChatTests */,
+				A5E3A74421304D8B002CFABA /* TokiChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5E3A72421304D8A002CFABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E3A73421304D8B002CFABA /* LaunchScreen.storyboard in Resources */,
+				A5E3A73121304D8B002CFABA /* Assets.xcassets in Resources */,
+				A5E3A72F21304D8A002CFABA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E3A73821304D8B002CFABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E3A74321304D8B002CFABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5E3A72221304D8A002CFABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E3A72C21304D8A002CFABA /* ViewController.swift in Sources */,
+				A5E3A72A21304D8A002CFABA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E3A73621304D8B002CFABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E3A73F21304D8B002CFABA /* TokiChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E3A74121304D8B002CFABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E3A74A21304D8B002CFABA /* TokiChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5E3A73C21304D8B002CFABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E3A72521304D8A002CFABA /* TokiChat */;
+			targetProxy = A5E3A73B21304D8B002CFABA /* PBXContainerItemProxy */;
+		};
+		A5E3A74721304D8B002CFABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E3A72521304D8A002CFABA /* TokiChat */;
+			targetProxy = A5E3A74621304D8B002CFABA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5E3A72D21304D8A002CFABA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E3A72E21304D8A002CFABA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5E3A73221304D8B002CFABA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E3A73321304D8B002CFABA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5E3A74C21304D8B002CFABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5E3A74D21304D8B002CFABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5E3A74F21304D8B002CFABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5DDRAWL9G;
+				INFOPLIST_FILE = TokiChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metallic-archaea.TokiChat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5E3A75021304D8B002CFABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5DDRAWL9G;
+				INFOPLIST_FILE = TokiChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metallic-archaea.TokiChat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5E3A75221304D8B002CFABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5DDRAWL9G;
+				INFOPLIST_FILE = TokiChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metallic-archaea.TokiChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TokiChat.app/TokiChat";
+			};
+			name = Debug;
+		};
+		A5E3A75321304D8B002CFABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5DDRAWL9G;
+				INFOPLIST_FILE = TokiChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metallic-archaea.TokiChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TokiChat.app/TokiChat";
+			};
+			name = Release;
+		};
+		A5E3A75521304D8B002CFABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5DDRAWL9G;
+				INFOPLIST_FILE = TokiChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metallic-archaea.TokiChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TokiChat;
+			};
+			name = Debug;
+		};
+		A5E3A75621304D8B002CFABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5DDRAWL9G;
+				INFOPLIST_FILE = TokiChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metallic-archaea.TokiChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TokiChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5E3A72121304D8A002CFABA /* Build configuration list for PBXProject "TokiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E3A74C21304D8B002CFABA /* Debug */,
+				A5E3A74D21304D8B002CFABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E3A74E21304D8B002CFABA /* Build configuration list for PBXNativeTarget "TokiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E3A74F21304D8B002CFABA /* Debug */,
+				A5E3A75021304D8B002CFABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E3A75121304D8B002CFABA /* Build configuration list for PBXNativeTarget "TokiChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E3A75221304D8B002CFABA /* Debug */,
+				A5E3A75321304D8B002CFABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E3A75421304D8B002CFABA /* Build configuration list for PBXNativeTarget "TokiChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E3A75521304D8B002CFABA /* Debug */,
+				A5E3A75621304D8B002CFABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5E3A71E21304D8A002CFABA /* Project object */;
+}
