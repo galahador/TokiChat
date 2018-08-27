@@ -15,18 +15,22 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sendButton: UIButton!
-    
+
     var messageArray: [MessageModel] = [MessageModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        messageTextField.delegate = self
+        delegateAndDataSourceSetup()
         registerNib()
         configTableView()
         configureTapGestureRegoniser()
         retriveMessages()
+    }
+
+    fileprivate func delegateAndDataSourceSetup() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        messageTextField.delegate = self
     }
 
     fileprivate func registerNib() {
@@ -60,11 +64,11 @@ class ChatViewController: UIViewController {
             ProgressHUD.showError("Faild to logout user -.-")
         }
     }
-    
+
     fileprivate func retriveMessages() {
         let messageDB = Database.database().reference().child("Messages")
         messageDB.observe(.childAdded) { (snapshot) in
-            let snapshodValue = snapshot.value as! Dictionary<String,String>
+            let snapshodValue = snapshot.value as! Dictionary<String, String>
             let text = snapshodValue["MessageBody"]!
             let sender = snapshodValue["Sender"]!
             let messageModel = MessageModel()
@@ -75,7 +79,7 @@ class ChatViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
-    
+
     fileprivate func sendTappedLogic() {
         messageTextField.endEditing(true)
         messageTextField.isEnabled = false
@@ -97,7 +101,7 @@ class ChatViewController: UIViewController {
     @IBAction func logoutButtonTapped(_ sender: UIBarButtonItem) {
         logoutUser()
     }
-    
+
     @IBAction func sendTapped(_ sender: UIButton) {
         sendTappedLogic()
     }
@@ -124,7 +128,7 @@ extension ChatViewController: UITableViewDataSource {
 }
 
 extension ChatViewController: UITableViewDelegate {
-    
+
 }
 
 extension ChatViewController: UITextFieldDelegate {
