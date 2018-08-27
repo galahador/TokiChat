@@ -7,3 +7,41 @@
 //
 
 import Foundation
+import UIKit
+import Firebase
+import SVProgressHUD
+
+class RegisterViewController: UIViewController {
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextFIeld: UITextField!
+    @IBOutlet weak var registerButton: UIButton!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        emailTextField.becomeFirstResponder()
+    }
+
+    fileprivate func showAlert(title: String, message: String, buttonTittle: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: buttonTittle, style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+
+    fileprivate func registerUser() {
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextFIeld.text!) { (user, error) in
+            if error != nil {
+                self.showAlert(title: "Error", message: error?.localizedDescription ?? "Error", buttonTittle: "Ok")
+                self.emailTextField.text = ""
+                self.passwordTextFIeld.text = ""
+            } else {
+                self.performSegue(withIdentifier: "fromRegistrationToChat", sender: self)
+                ProgressHUD.showSuccess("Successful registration!")
+            }
+        }
+    }
+
+    @IBAction func registerButtonTapped(_ sender: UIButton) {
+        registerUser()
+    }
+
+}

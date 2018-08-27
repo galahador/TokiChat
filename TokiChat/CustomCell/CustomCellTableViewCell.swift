@@ -9,7 +9,11 @@
 import UIKit
 
 class CustomCellTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var senderName: UILabel!
+    @IBOutlet weak var messageBody: UILabel!
+    @IBOutlet weak var messageView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,7 +22,6 @@ class CustomCellTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }
