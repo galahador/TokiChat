@@ -9,8 +9,6 @@
 import Foundation
 
 class MessageModel {
-    
     var senderName: String = ""
     var messageBody: String = ""
-    
 }
