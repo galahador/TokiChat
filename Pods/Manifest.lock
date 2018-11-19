@@ -59,6 +59,7 @@ PODS:
   - GoogleUtilities/Reachability (5.2.2):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.0)
+  - IQKeyboardManager (6.1.1)
   - leveldb-library (1.20)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
@@ -72,6 +73,7 @@ DEPENDENCIES:
   - Firebase
   - Firebase/Auth
   - Firebase/Database
+  - IQKeyboardManager
   - SVProgressHUD
 
 SPEC REPOS:
@@ -87,6 +89,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
+    - IQKeyboardManager
     - leveldb-library
     - nanopb
     - SVProgressHUD
@@ -103,10 +106,11 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: e785bdb86d3d280abc778156cec323a975f11d1d
   GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 6a2f984bca33a0e132de5a678bc46a240aa2207c
+PODFILE CHECKSUM: 2768e3dd0d96fbf65d3af68cb11c0f5e04ad6f7f
 
 COCOAPODS: 1.5.3

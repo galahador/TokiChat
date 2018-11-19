@@ -24,6 +24,9 @@
 		A5E3A77221305D9A002CFABA /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3A77021305D9A002CFABA /* ProgressHUD.m */; };
 		A5E3A779213065B5002CFABA /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3A777213065B5002CFABA /* CustomCellTableViewCell.swift */; };
 		A5E3A77A213065B5002CFABA /* CustomCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E3A778213065B5002CFABA /* CustomCellTableViewCell.xib */; };
+		A5E3C42521A2FB99007002E5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3C42421A2FB99007002E5 /* NavigationBar.swift */; };
+		A5E3C42721A30022007002E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3C42621A30022007002E5 /* Extensions.swift */; };
+		A5E3C42921A30169007002E5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3C42821A30169007002E5 /* RoundedButton.swift */; };
 		DAF98EAE9603BE868BC06A2A /* Pods_TokiChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14BF5A95E723687195940E6 /* Pods_TokiChatUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +79,9 @@
 		A5E3A77121305D9A002CFABA /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		A5E3A777213065B5002CFABA /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 		A5E3A778213065B5002CFABA /* CustomCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellTableViewCell.xib; sourceTree = "<group>"; };
+		A5E3C42421A2FB99007002E5 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		A5E3C42621A30022007002E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A5E3C42821A30169007002E5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C14BF5A95E723687195940E6 /* Pods_TokiChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TokiChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,10 +161,12 @@
 		A5E3A72821304D8A002CFABA /* TokiChat */ = {
 			isa = PBXGroup;
 			children = (
-				A5E3A7762130659B002CFABA /* CustomCell */,
 				A5E3A72921304D8A002CFABA /* AppDelegate.swift */,
 				A5E3A73521304D8B002CFABA /* Info.plist */,
+				A5E3C42221A2F9B1007002E5 /* Storyboard */,
+				A5E3A7762130659B002CFABA /* CustomCell */,
 				A5E3A75921304DE3002CFABA /* Controller */,
+				A5E3C42321A2FB74007002E5 /* Helper */,
 				A5E3A75821304DDE002CFABA /* View */,
 				A5E3A75721304DD4002CFABA /* Model */,
 				A5E3A75A21304DFC002CFABA /* Resources */,
@@ -195,8 +203,6 @@
 		A5E3A75821304DDE002CFABA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A5E3A73221304D8B002CFABA /* LaunchScreen.storyboard */,
-				A5E3A72D21304D8A002CFABA /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +245,26 @@
 				A5E3A778213065B5002CFABA /* CustomCellTableViewCell.xib */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		A5E3C42221A2F9B1007002E5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3A72D21304D8A002CFABA /* Main.storyboard */,
+				A5E3A73221304D8B002CFABA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A5E3C42321A2FB74007002E5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3C42421A2FB99007002E5 /* NavigationBar.swift */,
+				A5E3C42621A30022007002E5 /* Extensions.swift */,
+				A5E3C42821A30169007002E5 /* RoundedButton.swift */,
+			);
+			name = Helper;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +429,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -412,6 +439,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -469,6 +497,9 @@
 				A5E3A75C213052C9002CFABA /* MessageModel.swift in Sources */,
 				A5E3A77221305D9A002CFABA /* ProgressHUD.m in Sources */,
 				A5E3A762213052FD002CFABA /* LoginViewController.swift in Sources */,
+				A5E3C42721A30022007002E5 /* Extensions.swift in Sources */,
+				A5E3C42921A30169007002E5 /* RoundedButton.swift in Sources */,
+				A5E3C42521A2FB99007002E5 /* NavigationBar.swift in Sources */,
 				A5E3A76421305306002CFABA /* ChatViewController.swift in Sources */,
 				A5E3A779213065B5002CFABA /* CustomCellTableViewCell.swift in Sources */,
 				A5E3A760213052F2002CFABA /* RegisterViewController.swift in Sources */,

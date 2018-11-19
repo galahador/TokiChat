@@ -11,6 +11,7 @@ target 'TokiChat' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'SVProgressHUD'
+  pod 'IQKeyboardManager'
 
   target 'TokiChatTests' do
     inherit! :search_paths

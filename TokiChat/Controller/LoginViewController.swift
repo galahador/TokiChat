@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.becomeFirstResponder()
+        RoundedButton().buttonCornerRadiusSetup(button: loginButton)
     }
     
     fileprivate func showAlert(title:String, message: String, buttonTittle: String) {
@@ -36,9 +36,14 @@ class LoginViewController: UIViewController {
                 self.passwordTextField.text = ""
             } else {
                 ProgressHUD.showSuccess("Success! ^_^")
-                self.performSegue(withIdentifier: "fromLoginToChat", sender: self)
+                self.showChatViewContorller()
             }
         }
+    }
+    
+    fileprivate func showChatViewContorller() {
+        let chatVC = storyboard?.instantiateViewController(withIdentifier: "ChatViewController") as! ChatViewController
+        navigationController?.pushViewController(chatVC, animated: true)
     }
 
     @IBAction func loginButtonTapped(_ sender: UIButton) {

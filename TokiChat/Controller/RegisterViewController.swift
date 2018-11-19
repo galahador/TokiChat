@@ -18,7 +18,7 @@ class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.becomeFirstResponder()
+        RoundedButton().buttonCornerRadiusSetup(button: registerButton)
     }
 
     fileprivate func showAlert(title: String, message: String, buttonTittle: String) {
@@ -34,10 +34,15 @@ class RegisterViewController: UIViewController {
                 self.emailTextField.text = ""
                 self.passwordTextFIeld.text = ""
             } else {
-                self.performSegue(withIdentifier: "fromRegistrationToChat", sender: self)
+                self.showChatViewContorller()
                 ProgressHUD.showSuccess("Successful registration!")
             }
         }
+    }
+    
+    fileprivate func showChatViewContorller() {
+        let chatVC = storyboard?.instantiateViewController(withIdentifier: "ChatViewController") as! ChatViewController
+        navigationController?.pushViewController(chatVC, animated: true)
     }
 
     @IBAction func registerButtonTapped(_ sender: UIButton) {
