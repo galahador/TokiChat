@@ -6,7 +6,7 @@
 //  Copyright © 2018 Metalic_archaea. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension String {
     //Email regex
